@@ -25,7 +25,6 @@ const ContactUs = () => {
     if (messageDivRef.current) {
       messageDivRef.current.scrollIntoView({ behavior: "smooth" });
       messageDivRef.current.classList.add("scale-105", "transition-transform", "duration-300");
-
       shopNameRef.current.focus();
 
       setTimeout(() => {
@@ -36,19 +35,16 @@ const ContactUs = () => {
 
   return (
     <div
-      className="relative h-full text-white font-raleway"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+      className="relative h-full text-white font-raleway bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black/70"></div>
       <div className="relative container mx-auto py-12 px-6">
-        <h2 className="text-4xl text-gray-200 text-center font-bold mb-8">
-          Contact <span className="text-pink-500">Us</span>
+        <h2 className="text-4xl text-gray-200 text-center font-bold mb-8 flex items-center justify-center gap-2">
+          Contact <span className="text-4xl text-pink-500">Us</span>
+          <Mail className="text-pink-500 w-10 h-10" />
         </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Info Section */}
           <div className="relative max-w-xl text-center md:text-right p-6 rounded-lg shadow-lg mx-auto bg-black/60">
