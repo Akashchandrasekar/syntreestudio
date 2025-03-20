@@ -29,13 +29,13 @@ const WhyChooseUs = () => {
                 {[
                     {
                         title: "Agile Development",
-                        image: "https://www.krasamo.com/wp-content/uploads/agile-01-1024x568.jpeg",
+                        image: "https://static.vecteezy.com/system/resources/previews/013/567/543/large_2x/agile-development-workflow-concept-vector.jpg",
                         description:
                             "Agile empowers teams to deliver better software through collaboration, adaptability, and iterative progress to meet needs.",
                     },
                     {
                         title: "Experienced Developer",
-                        image: "https://img.freepik.com/premium-vector/programmer-engineering-development-coding-web-development-website-design-developer-vector_199064-126.jpg",
+                        image: "https://img.freepik.com/premium-photo/developer-computer-engineer-coding-hacker-concept-flat-vector-illustration-daily-activities-working-ai-generated_705708-31368.jpg",
                         description:
                             "We blend innovation with expertise, delivering cutting-edge solutions and seamless success for any challenge.",
                     },
@@ -66,19 +66,22 @@ const WhyChooseUs = () => {
                 ].map((service, index) => (
                     <div
                         key={index}
-                        className="w-full max-w-xs mx-auto cursor-pointer bg-white shadow-md rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-lg flex flex-col min-h-[350px]"
+                        className="w-full max-w-xs mx-auto bg-gradient-to-r from-gray-800 via-gray-700 to-gray-850 bg-opacity-40 backdrop-blur-3xl shadow-2xl rounded-2xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-3xl flex flex-col justify-between cursor-pointer min-h-[350px]"
                     >
-                        <img
-                            src={service.image}
-                            alt={service.title}
-                            className="w-full h-40 sm:h-48 object-cover"
-                        />
+                     <img
+    src={service.image}
+    alt={service.title}
+    style={{ objectPosition: "center center" }}
+    className="w-full h-40 sm:h-48 object-cover rounded-t-2xl"
+/>
+
+
                         <div className="p-4 flex flex-col justify-between flex-grow">
                             <h2 className="text-lg md:text-xl text-pink-500 font-bold mb-2">{service.title}</h2>
-                            <p className="text-gray-700 text-sm md:text-base mb-4">{service.description}</p>
+                            <p className="text-gray-100 text-sm md:text-base mb-4">{service.description}</p>
                             <button
                                 onClick={() => navigate('/contact')}
-                                className="mt-auto bg-pink-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-pink-600 transition"
+                                className="mt-auto bg-pink-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-pink-600 transition shadow-md hover:shadow-lg"
                             >
                                 Contact Us &rarr;
                             </button>
