@@ -7,62 +7,115 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center md:text-left">
           {/* Our Services Section */}
           {/* Our Services Section */}
-          <div className="single_footer">
-            <h4 className="text-xl font-bold mb-4 text-pink-500">
-              Our Services
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/service" className="hover:text-pink-400 transition">
-                  Web Design
-                </Link>
-              </li>
-              <li>
-                <Link to="/service" className="hover:text-pink-400 transition">
-                  Web Application
-                </Link>
-              </li>
-              <li>
-                <Link to="/service" className="hover:text-pink-400 transition">
-                  Windows Applications
-                </Link>
-              </li>
-              <li>
-                <Link to="/service" className="hover:text-pink-400 transition">
-                  Mobile Applications
-                </Link>
-              </li>
-            </ul>
-          </div>
+<div className="single_footer">
+  <h4 className="text-xl font-bold mb-4 text-pink-500">
+    Our Services
+  </h4>
+  <ul className="space-y-2">
+    <li>
+      <Link
+        to="/service"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="hover:text-pink-400 transition"
+      >
+        Web Design
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/service"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="hover:text-pink-400 transition"
+      >
+        Web Application
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/service"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="hover:text-pink-400 transition"
+      >
+        Windows Applications
+      </Link>
+    </li>
+   <li>
+       <Link
+        to="/service"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="hover:text-pink-400 transition"
+      >
+        Mobile Applications
+      </Link>
+    </li>
+    <li>
+       <Link
+        to="/service"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="hover:text-pink-400 transition"
+      >
+        UI/UX Design
+      </Link>
+    </li>
+  </ul>
+</div>
+
 
           <div className="single_footer">
             <h4 className="text-xl font-bold mb-4 text-pink-500">Page Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/service" className="hover:text-pink-400 transition">
+                <Link
+                  to="/service"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className="hover:text-pink-400 transition"
+                >
                   Services
                 </Link>
               </li>
               <li>
                 <Link
                   to="/why-choose-us"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
                   className="hover:text-pink-400 transition"
                 >
                   Why Choose Us
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-pink-400 transition">
+                <Link
+                  to="/about"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className="hover:text-pink-400 transition"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-pink-400 transition">
+                <Link
+                  to="/contact"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className="hover:text-pink-400 transition"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="/home" className="hover:text-pink-400 transition">
+                <Link
+                  to="/"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className="hover:text-pink-400 transition"
+                >
                   Home
                 </Link>
               </li>
