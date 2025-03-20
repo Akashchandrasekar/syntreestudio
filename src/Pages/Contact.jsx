@@ -80,7 +80,7 @@ const ContactUs = () => {
             className="relative bg-cover bg-center p-6 rounded-lg shadow-lg transition-transform duration-300"
           >
             <div className="bg-black bg-opacity-70 p-6 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-white">Send Message</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-white">Send <span className="text-pink-500 text-2xl ">Message</span></h3>
               <input
                 ref={shopNameRef}
                 id="shop-name"
